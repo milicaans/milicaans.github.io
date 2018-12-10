@@ -1,0 +1,30 @@
+body,html{
+height:100%;
+margin:0%;
+font-family:"Lato";
+font-size:16px;
+color: #666;
+}
+h2{
+	text-align: center;
+}
+.slika1,.slika2
+{
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+}
+
+
+.slika1{
+
+	background-image: url('./slike/puppies.png');
+	height: 400px;
+}
+.slika2{
+
+	background-image: url('./slike/puppy_strangles.jpg');
+	height: 400px;
+}

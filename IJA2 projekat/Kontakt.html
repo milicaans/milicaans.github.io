@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="Onama.css">
+  	<link rel="stylesheet" href="Galerija.css">
+    <link rel="stylesheet" href="Pocetna.css">
+    <link rel="stylesheet" href="Kontakt.css">
+
+
+</head>
+<body>
+
+   <header>
+
+<nav>
+    <a href="Onama.html">O nama</a>
+    <a href="Galerija.html">Galerija</a>
+	<a href="Pocetna.html">Pocetna</a>
+
+</nav>
+
+</header>
+
+<form name="kontakt">
+  <div class="kontakt" >
+  <label>Ime</label>
+  <input type="text" name="ime" placeholder="Vase ime.." >
+  <br>
+  <br>
+  <label>Prezime</label>
+  <input type="text" name="prezime" placeholder="Vase prezime..">
+<br>
+<br>
+  <label>Drzava</label>
+  <select name="drzava">
+    <option value="Srbija">Serbia</option>
+    <option value="Bosna i Hercegovina">Bosnia and Herzegovina</option>
+    <option value="Hrvatska">Croatia</option>
+  </select>
+<br>
+<br>
+  <label>Poruka</label>
+  <textarea name="poruka" placeholder="Napisite nesto.." style="height:200px"></textarea>
+
+  <input type="submit" value="Posalji" onclick="posalji()">
+
+ </section>
+</form>
+<script>
+  function posalji()
+  {
+    var name=document.kontakt.ime.value;
+    var lastname=document.kontakt.prezime.value;
+    var country=document.kontakt.drzava.value;
+    var text=document.kontakt.poruka.value
+
+    var myWindow=window.open("","","width=200,height=200")
+		myWindow.document.write("Ime:  "+ name +"<br>"+ "Prezime: "+lastname+"<br>"+"Drzava: "+country+"<br>"+"Poruka: "+ text);
+    myWindow.document.body.style.background = "#666";
+  }
+
+</script>
+</div>
+
+</body>
+</html>

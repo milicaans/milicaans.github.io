@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	<title>Galerija </title>
+  <link rel="stylesheet" href="Onama.css">
+	<link rel="stylesheet" href="Galerija.css">
+  <link rel="stylesheet" href="Pocetna.css">
+  <link rel="stylesheet" href="Kontakt.css">
+
+
+</head>
+<body>
+   <header>
+
+<nav>
+    <a href="Onama.html">O nama</a>
+    <a href="Pocetna.html">Pocetna</a>
+	<a href="Kontakt.html">Kontakt</a>
+
+</nav>
+
+</header>
+</div>
+<form name="udomime">
+
+<h1 class='galerija1'>Izaberite psa</h1>
+<br><br><br>
+<div>
+<div class="images1">
+<img src="slike/pug.jpg">
+<input type="radio" name="izbor" value="mops">Mops<br>
+<a href="http://mezimci.rs/informacije-o-rasama/psi/psi-za-pratnju-i-razonodu/mops-pug.htm">Detaljnije</a>
+</div>
+<div class="images1">
+<img src="slike/beagle.jpg">
+<input type="radio" name="izbor" value="bigl">Bigl<br>
+<a href="http://mezimci.rs/informacije-o-rasama/psi/gonic-tragac-po-krvi-i-srodne-rase/bigl.htm">Detaljnije</a>
+</div>
+<div class="images1">
+<img src="slike/staford.jpg">
+<input type="radio" name="izbor" value="staford">Staford<br>
+<a href="http://mezimci.rs/informacije-o-rasama/psi/terijeri/americki-stafordski-terijer.htm">Detaljnije</a>
+</div>
+<div class="images1">
+<img src="slike/pomeranac.jpg">
+<input type="radio" name="izbor" value="pomeranc">Pomeranac<br>
+<a href="http://mezimci.rs/informacije-o-rasama/psi/spic-tip-i-primitivni-tip-psa/pomeranski-spic-boo.htm">Detaljnije</a>
+</div>
+<div class="images1">
+<img src="slike/retriver.jpg">
+<input type="radio" name="izbor" value="retriver">Zlatni retriver<br>
+<a href="http://mezimci.rs/informacije-o-rasama/psi/retriveri-cunjavci-i-psi-za-vodu/zlatni-retriver.htm">Detaljnije</a>
+<br>
+<input type="button" value="Potvrdi" onclick="udomi()">
+</form>
+
+<script>
+  function udomi() {
+
+    var izbor = document.udomime.izbor;
+    for (i=0;i<5;i++)
+    {
+    if ( izbor[i].checked === true )
+    {
+      izabrano=izbor[i].value;
+    }
+  }
+    alert("Cesititamo udomili ste "+izabrano+"a.");
+
+  }
+</script>
+
+</div>
+</body></html>

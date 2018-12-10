@@ -1,0 +1,22 @@
+.kontakt{padding-top:100px;
+}
+
+
+input[type=submit] {
+    background-color: red;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+#submit {
+  margin-bottom: 50px;
+}
